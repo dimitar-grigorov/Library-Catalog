@@ -6,7 +6,7 @@
     "scripts": {
         "test": "npx playwright test",
         "start-fe": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
-        "start-be": "node server.js"
+        "start-be": "node server/server.js"
     },
     "author": "",
     "license": "ISC",
