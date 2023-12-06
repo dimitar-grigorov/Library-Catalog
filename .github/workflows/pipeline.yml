@@ -43,6 +43,7 @@ jobs:
         with:
           service-id: ${{ secrets.RENDER_BACKEND_KEY }}
           api-key: ${{ secrets.RENDER_API_KEY }}
+          wait-for-success: true
 
   deploy-frontend:
     needs: deploy-backend
@@ -53,3 +54,4 @@ jobs:
         with:
           service-id: ${{ secrets.RENDER_FRONTEND_KEY }}
           api-key: ${{ secrets.RENDER_API_KEY }}
+          wait-for-success: true
